@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Switch
+        android:id="@+id/id_switch"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:text="Switch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.688"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.128" />
+
+    <TextView
+        android:id="@+id/id_text_switch"
+        android:layout_width="70dp"
+        android:layout_height="32dp"
+        android:text="Turn On Slider"
+        app:layout_constraintBottom_toBottomOf="@+id/id_switch"
+        app:layout_constraintEnd_toStartOf="@+id/id_switch"
+        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/id_switch"
+        app:layout_constraintVertical_bias="0.684" />
+
+    <SeekBar
+        android:id="@+id/id_seekbar"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_switch"
+        app:layout_constraintVertical_bias="0.439" />
+
+    <Button
+        android:id="@+id/id_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_displaytext"
+        app:layout_constraintVertical_bias="0.083" />
+
+    <EditText
+        android:id="@+id/id_displaytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_switch"
+        app:layout_constraintVertical_bias="0.143" />
+
+    <TextView
+        android:id="@+id/id_displaycolortext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display Color"
+        app:layout_constraintBottom_toBottomOf="@+id/id_displaytext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id_displaytext"
+        app:layout_constraintTop_toTopOf="@+id/id_displaytext"
+        app:layout_constraintVertical_bias="0.517" />
+</androidx.constraintlayout.widget.ConstraintLayout>
